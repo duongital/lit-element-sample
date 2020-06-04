@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="build/index.js"></script>
+    <style>
+        my-element { font-family: Tahoma }
+        my-element::part(box) {
+            background-color: aquamarine;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
 </head>
 <body>
     <h1>hi lit-element</h1>
-    <my-element mystring="hello world"></my-element>
+    <my-element prop1="green" class="stuff"></my-element>
 </body>
 </html>
